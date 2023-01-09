@@ -1,4 +1,4 @@
-# Tratamento-de-erros-em-APIs-Spring
+# Tratamento-de-erros-em-APIs-Spring-teste-git-stash
 
 <h2>Controller Advice</h2>
 <p>Intercepta todas as exceções que foram geradas a partir de um endpoint da aplicação e se tiver algum método escutando essa exceção, ele será executado.</p>
