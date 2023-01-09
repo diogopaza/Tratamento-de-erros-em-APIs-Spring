@@ -33,7 +33,7 @@ public class AvaliacaoService {
 
         try {
             var myPDF = savePDF(dto);
-            byte[] array = Files.readAllBytes(java.nio.file.Paths.get(myPDF));
+            byte[] array = Files22.readAllBytes(java.nio.file.Paths.get(myPDF));
             return array;
         } catch (IOException e) {
             // TODO Auto-generated catch block
