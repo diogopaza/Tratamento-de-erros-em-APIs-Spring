@@ -1,30 +1,19 @@
 package com.erros.service;
 
-import java.io.File;
-import java.io.FileInputStream;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
-import com.itextpdf.text.pdf.parser.clipper.Paths;
-
-import org.apache.pdfbox.io.IOUtils;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.erros.DTO.AvaliacaoDTO;
 
-import lombok.AllArgsConstructor;
 
 @Service
 public class AvaliacaoService {
@@ -33,7 +22,7 @@ public class AvaliacaoService {
 
         try {
             var myPDF = savePDF(dto);
-            byte[] array = Files22.readAllBytes(java.nio.file.Paths.get(myPDF));
+            byte[] array = Files.readAllBytes(java.nio.file.Paths.get(myPDF));
             return array;
         } catch (IOException e) {
             // TODO Auto-generated catch block

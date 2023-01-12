@@ -1,4 +1,5 @@
-# Tratamento-de-erros-em-APIs-Spring stash
+Tratamento-de-erros-em-APIs-Spring-55555
+Stashed changes
 
 <h2>Controller Advice</h2>
 <p>Intercepta todas as exceções que foram geradas a partir de um endpoint da aplicação e se tiver algum método escutando essa exceção, ele será executado.</p>
